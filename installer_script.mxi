@@ -1,0 +1,20 @@
+<macromedia-extension
+	type="suite"
+	version="0.0.1"
+	requires-restart="true"
+	name="VG Toolkit">
+	<author name="Visual Goodness Development Team" />
+	<products>
+		<product name="Flash" version="11" primary="true" />
+	</products>
+	<description>
+		<![CDATA[Useful tools for the VG internal team.]]>
+	</description>
+	<license-agreement>
+		<![CDATA[CDATA[No licensing information yet. Use at your own risk.]]>
+	</license-agreement>
+	<files>
+		<file source="deploy/WindowSWF/VG Toolkit Panel.swf" destination="$Flash\WindowSWF" />
+		<file source="deploy/VG_ToolKit" destination="$Flash\" />
+	</files>
+</macromedia-extension>

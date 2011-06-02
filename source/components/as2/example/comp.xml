@@ -1,0 +1,9 @@
+<customactions>
+<actionspanel>
+<string name = "component" tipText = "Pulsating button" text = "component()">
+</actionspanel>
+<reference path="component">
+<p class="titleStyle">Custom Component<p></p>
+<p>Blue pulsating button with text label.</p>
+</reference>
+</customactions>
