@@ -148,7 +148,7 @@ function makeButton(hasOver){
 		
 		
 		
-		fl.getDocumentDOM().exitEditMode();
+		//fl.getDocumentDOM().exitEditMode();
 	}
 }
 function checkLibraryForItem(checkName){
