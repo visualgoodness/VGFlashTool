@@ -1,0 +1,18 @@
+<dialog title="Select Symbol" buttons="accept, cancel">
+    <properties>
+        <property id="target_symbol" default="_parent" />
+    </properties>
+    <hbox>
+        <targetlist id="target_symbol" height="300" width="400" required="true" class="movie clip"/>
+		<textbox id="display_tb" size="24" />
+		<menulist>
+			<menuitem id="label1" label="None"/>
+			<menuitem label="One" />
+			<menuitem label="Two" />
+			<menuitem label="Three" />
+		</menulist>	
+		<button id="trace_btn" label="trace Flash" oncommand="fl.xmlui.set('display_tb','the secret word is ' + fl.xmlui.get('secretword'));" />
+    </hbox>
+	
+
+</dialog>

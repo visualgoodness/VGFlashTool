@@ -3,9 +3,10 @@
     import adobe.utils.MMExecute;        
     import flash.display.MovieClip;  
 	import flash.events.Event;
-    import flash.events.MouseEvent; 
-	import PanelSections.TimelineTools;
+    import flash.events.MouseEvent;
 	
+	import PanelSections.TimelineTools;
+	import PanelSections.FileTools;
 	import PanelSections.SymbolTools;
   
     public class VGToolKitPanel extends MovieClip  
@@ -26,7 +27,7 @@
 			removeEventListener(Event.ADDED_TO_STAGE, init);
 			
 			//add new tab mc's to array
-			tabs = [tab1,tab2];
+			tabs = [tab1,tab2,tab3];
 
 			tab1.id = 0;
 			tab1.setTitle("Symbol Tools");
@@ -37,6 +38,11 @@
 			tab2.setTitle("Timeline Tools");
 			tab2.hit.addEventListener(MouseEvent.CLICK, toggleTab);
 			tab2.contents = new TimelineTools(useLocalPaths);
+			
+			tab3.id = 2;
+			tab3.setTitle("File Tools");
+			tab3.hit.addEventListener(MouseEvent.CLICK, toggleTab);
+			tab3.contents = new FileTools(useLocalPaths);
 			
 
 			

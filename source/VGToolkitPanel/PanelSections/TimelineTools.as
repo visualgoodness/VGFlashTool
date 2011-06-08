@@ -20,11 +20,12 @@ package PanelSections
 
 		
 		//convert Object to button section
+		//convert Object to button section
 		private function initConvertObjectToButton() {
-			creatButtonBtn.addEventListener(MouseEvent.CLICK, onCreateButton ); 
+			nameAllInstances.addEventListener(MouseEvent.CLICK, onNameAllInstances ); 
 		}
-		private function onCreateButton( e:MouseEvent ):void {  
-            MMExecute( "fl.runScript(fl.configURI + 'VG_Toolkit/Commands' + '/MakeButton.jsfl','makeButton',"+overToggle.selected+")" );   
+		private function onNameAllInstances( e:MouseEvent ):void {  
+            MMExecute( "fl.runScript(fl.configURI + 'VG_Toolkit/Commands' + '/NameAllInstances.jsfl')" );   
         }  
 		
 		

@@ -23,6 +23,7 @@ package PanelSections
 		private function initConvertObjectToButton() {
 			creatButtonBtn.addEventListener(MouseEvent.CLICK, onCreateButton ); 
 			createMaskBtn.addEventListener(MouseEvent.CLICK, onCreateMask ); 
+			moveToPixel.addEventListener(MouseEvent.CLICK, onMoveToPixel); 
 		}
 		
 		private function onCreateButton( e:MouseEvent ):void {  
@@ -31,6 +32,9 @@ package PanelSections
 		private function onCreateMask(e:MouseEvent):void {
 			MMExecute( "fl.runScript(fl.configURI + 'VG_Toolkit/Commands' + '/MakeMask.jsfl')");   
 			
+		}
+		private function onMoveToPixel(e:MouseEvent):void {
+			MMExecute( "fl.runScript(fl.configURI + 'VG_Toolkit/Commands' + '/MoveToInteger.jsfl')");   
 		}
 		
 		
